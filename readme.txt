@@ -1,0 +1,2 @@
+This PHP based project collects information from various different Gaming users. This project uses K-mean algorithm for clustering and classification. This project will be providing additional aid to the gaming company for performing market analysis and performing statistical analysis based on the information collected by online interface developed in PHP.
+Project uses Weka tool for generating graph and reports.
