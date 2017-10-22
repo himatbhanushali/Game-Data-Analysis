@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blog - Game Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript">
+	
+	function validate()
+	{
+			
+		var co = document.getElementById('cno');
+		
+		if(co.value==" ")
+		{
+			
+			alter("Please enter contact no");
+			return false;	
+		}
+		else if(co.value!="")
+		{
+			
+			return true;
+		}	
+		return false;
+		
+	}
+	</script>
+</head>
+<body>
+	<div id="background">
+		<div id="header">
+			<div>
+				<div>
+					<a href="index.php" class="logo"><img src="images/logo.png" alt=""></a>
+					<ul>
+						<li class="selected">
+							<a href="index.php" id="menu1">home</a>
+						</li>
+						<li>
+							<a href="register.html" id="menu2">Register</a>
+						</li>
+						<li>
+							<a href="reviewform.php" id="menu3">Review</a>
+						</li>
+						<li>
+							<a href="about.html" id="menu4">News</a>
+						</li>
+						<li>
+							<a href="login.php" id="menu5">Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div>
+				<div>
+					<div class="blog">
+					 <font size="+1" face="Palatino Linotype, Book Antiqua, Palatino, serif">
+                    <center>
+                    <table border="0" wdith=40%>
+                    
+                    <form action="showsuggestion.php" method="post" onSubmit="return validate()">
+                    <tr>
+                    <td><font size="+1" face="Palatino Linotype, Book Antiqua, Palatino, serif">Age Group</font> : </td>
+                    <td><select name="age" id="age">
+                            <option value="5-10">5-10</option>
+                            <option value="11-15">11-15</option>
+                            <option value="16-20">16-20</option>
+                            <option value="21-25">21-25</option>
+                            <option value="26-30">26-30</option>
+                            <option value="31-35">31-35</option>
+                            <option value="36-40">36-40</option>
+                            <option value="41-45">41-45</option>
+                            </select>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td><input type="submit" value="submit"></td>
+                    <td><input type="reset" value="cancel"></td>
+                    </tr>
+                    </form>
+                    </table>
+                    </center>
+                      </font>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li id="facebook">
+						<a href="">facebook</a>
+					</li>
+					<li id="twitter">
+						<a href="">twitter</a>
+					</li>
+					<li id="googleplus">
+						<a href="">googleplus</a>
+					</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Media - Game Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript">
+	function validation()
+	{
+		var fn,ln,dd,mm,yyy,gender,email,contact,loginid,pass,repass;
+		
+		fn = document.getElementById('fn');
+		ln = document.getElementById('ln');
+		
+		
+		email = document.getElementById('email');
+		contact = document.getElementById('phone');
+		loginid = document.getElementById('loginid');
+		pass = document.getElementById('pwd');
+		repass = document.getElementById('repwd');
+	
+		if(fn.value=="")
+		{
+			alert("please provide first name");
+			return false;	
+		}
+		else if(ln.value=="")
+		{
+			alert("please provide last name");
+			return false;	
+		}
+		else if(email.value=="")
+		{
+			alert("please provide email address");
+			return false;	
+		}
+		else if(contact.value=="")
+		{
+			alert("please provide contact details");
+			return false;	
+		}
+		else if(loginid.value=="")
+		{
+			alert("please provide login id");
+			return false;	
+		}
+		else if(pass.value=="")
+		{
+			alert("please provide password");
+			return false;	
+		}
+		else if(repass.value=="")
+		{	alert("please re-type the password");
+			return false;
+		
+		}
+		
+		if(pass.value!="" && repass.value!="")
+		{
+			if(pass.value!=repass.value)
+			{
+				alert("please enter password correctly");
+				return false;
+			}	
+		}
+		
+		var radios = document.getElementsByName("gen");
+   
+    	var radiosChecked = false;
+    
+
+   		 var i = 0;
+    while (!radiosChecked && i < radios.length) {
+        if (radios[i].checked) radiosChecked = true;
+        i++;
+    }
+		 if (radiosChecked) {
+        	return true;
+    } else {
+        alert("Please Select Gender")
+		return false;
+    }
+	}
+	</script>
+</head>
+<body>
+	<div id="background">
+		<div id="header">
+			<div>
+				<div>
+					<a href="index.php" class="logo"><img src="images/logo.png" alt=""></a>
+					<ul>
+						<li class="selected">
+							<a href="index.php" id="menu1">home</a>
+						</li>
+						<li>
+							<a href="register.html" id="menu2">Register</a>
+						</li>
+						<li>
+							<a href="reviewform.php" id="menu3">Review</a>
+						</li>
+						<li>
+							<a href="about.html" id="menu4">News</a>
+						</li>
+						<li>
+							<a href="login.php" id="menu5">Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div>
+				<div>
+					<div class="media">
+						<div></div>
+                        <font size="+1" face="Palatino Linotype, Book Antiqua, Palatino, serif">
+                        <form action="register.php" method="post" onSubmit="return validation()">
+						<table width="50%" border="1" bordercolor="#000000" align="center" cellpadding="1" cellspacing="15">
+						  <tr >
+						    <td align="center" colspan="2">Registration Form</td>
+						    
+					      </tr>
+                          
+                          <tr>
+						    <td>First Name</td>
+						    <td><input type="text" name="fn" id="fn" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Last Name</td>
+						    <td><input type="text" name="ln" id="ln" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Age Group</td>
+						    <td><select name="age" id="age">
+                            <option value="5-10">5-10</option>
+                            <option value="11-15">11-15</option>
+                            <option value="16-20">16-20</option>
+                            <option value="21-25">21-25</option>
+                            <option value="26-30">26-30</option>
+                            <option value="31-35">31-35</option>
+                            <option value="36-40">36-40</option>
+                            <option value="41-45">41-45</option>
+                            </select>
+                            </td>
+					      </tr>
+						  <tr>
+						    <td>Gender</td>
+						    <td><input type="radio" name="gen" id="gen" value="Male">Male  <input type="radio" name="gen" id="gen"value="Female"> Female</td>
+					      </tr>
+						  <tr>
+						    <td>Email Id</td>
+						    <td><input type="text" name="email" id="email" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Contact No</td>
+						    <td><input type="text" name="phone" id="phone" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Login Id</td>
+						    <td><input type="text" name="loginid" id="loginid" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Password</td>
+						    <td><input type="password" name="pwd" id="pwd" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td>Re-Type Password</td>
+						    <td><input type="password" name="repwd" id="repwd" size="30"></td>
+					      </tr>
+						  <tr>
+						    <td align="center"><input type="submit" value="Register"></td>
+						    <td align="center"><input type="reset" value="Cancel"></td>
+					      </tr>
+						  
+					  </table>
+                      </form>
+                      </font>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li id="facebook">
+						<a href="">facebook</a>
+					</li>
+					<li id="twitter">
+						<a href="">twitter</a>
+					</li>
+					<li id="googleplus">
+						<a href="">googleplus</a>
+					</li>
+				</ul>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
